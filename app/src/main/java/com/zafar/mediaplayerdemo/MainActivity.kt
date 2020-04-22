@@ -49,13 +49,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadOnlineURL() {
-        onlineSongList.add(SongInfo("001", "Ahmed", "https://server6.mp3quran.net/thubti/001.mp3"))
-        onlineSongList.add(SongInfo("002", "Ahmed", "https://server6.mp3quran.net/thubti/002.mp3"))
-        onlineSongList.add(SongInfo("003", "Alex", "https://server6.mp3quran.net/thubti/003.mp3"))
-        onlineSongList.add(SongInfo("004", "Ahmed", "https://server6.mp3quran.net/thubti/004.mp3"))
-        onlineSongList.add(SongInfo("005", "Alex", "https://server6.mp3quran.net/thubti/005.mp3"))
-        onlineSongList.add(SongInfo("Jinke Liye", "B Praak", "https://gaana.com/song/jinke-liye-from-jaani-ve"))
-        onlineSongList.add(SongInfo("Tibbeyan da putt", "The Kidd", "https://gaana.com/song/tibbeyan-da-putt"))
+        onlineSongList.add(SongInfo("Pehli Baar", "Dhadak", "https://m.bestwap2.in/load/MP3_Songs/2018%20Bollywood/Dhadak%20Mp3%20Songs%20(2018)/Pehli%20Baar%20Mp3%20Song%20-%20Dhadak/Pehli%20Baar%20-%20Dhadak%2064%20Kbps.mp3"))
+//        onlineSongList.add(SongInfo("001", "Ahmed", "https://server6.mp3quran.net/thubti/001.mp3"))
+//        onlineSongList.add(SongInfo("003", "Alex", "https://server6.mp3quran.net/thubti/003.mp3"))
+//        onlineSongList.add(SongInfo("004", "Ahmed", "https://server6.mp3quran.net/thubti/004.mp3"))
+//        onlineSongList.add(SongInfo("005", "Alex", "https://server6.mp3quran.net/thubti/005.mp3"))
+        onlineSongList.add(SongInfo("Mulaqaat", "Cheat India", "https://m.bestwap2.in/load/MP3_Songs/2019%20Bollywood/Cheat%20India%20Mp3%20Songs%20(2019)/Phir%20Mulaaqat%20Mp3%20Song%20-%20Cheat%20India/Phir%20Mulaaqat%20-%20Cheat%20India%20128%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Dekhte dekhte", "Batti Gul Meter Chalu ", "https://m.bestwap2.in/load/MP3_Songs/2018%20Bollywood/Batti%20Gul%20Meter%20Chalu%20Mp3%20Songs%20(2018)/Dekhte%20Dekhte%20Rahat%20Version%20-%20Batti%20Gul%20Meter%20Chalu/Dekhte%20Dekhte%20Version%202%20-%20Batti%20Gul%20Meter%20Chalu%2064%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Taiyari", "Cheat India", "https://m.bestwap2.in/load/MP3_Songs/2019%20Bollywood/Cheat%20India%20Mp3%20Songs%20(2019)/Taiyaari%20Mp3%20Song%20-%20Cheat%20India/Taiyaari%20-%20Cheat%20India%20128%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Dil me ho tum", "Cheat India", "https://m.bestwap2.in/load/MP3_Songs/2019%20Bollywood/Cheat%20India%20Mp3%20Songs%20(2019)/Dil%20Mein%20Ho%20Tum%20Mp3%20Song%20-%20Cheat%20India/Dil%20Mein%20Ho%20Tum%20-%20128%20Kbps%20Cheat%20India.mp3"))
+        onlineSongList.add(SongInfo("Title track", "Kalank", "https://m.bestwap2.in/load/MP3_Songs/2019%20Bollywood/Kalank%20Mp3%20Songs%20(2019)/Title%20Track%20Mp3%20Song%20-%20Kalank/Kalank%20-%20Title%20Song%20128%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Tabaah ho gye", "Kalank", "https://m.bestwap2.in/load/MP3_Songs/2019%20Bollywood/Kalank%20Mp3%20Songs%20(2019)/Tabaah%20Ho%20Gaye%20Mp3%20Song%20-%20Kalank/Tabaah%20Ho%20Gaye%20-%20Kalank%20128%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Apna Time aayega", "Gully boy", "https://m.bestwap2.in/load/MP3_Songs/2019%20Bollywood/Gully%20Boy%20Mp3%20Songs%20(2019)/Apna%20Time%20Aayega%20Mp3%20Song%20-%20Gully%20Boy/Apna%20Time%20Aayega%20-%20Gully%20Boy%20128%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Azaadi", "Gully boy", "https://m.bestwap2.in/load/MP3_Songs/2019%20Bollywood/Gully%20Boy%20Mp3%20Songs%20(2019)/Azadi%20Mp3%20Song%20-%20Gully%20Boy/Azadi%20-%20Gully%20Boy%20128%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Ashiq banaya aapne", "Hate Story4", "https://m.bestwap2.in/load/MP3_Songs/2018%20Bollywood/Hate%20Story%204%20Mp3/128%20Kbps%20Medium%20Quality/Aashiq%20Banaya%20Aapne%20-%20Hate%20Story%204%20128%20Kbps.mp3"))
+        onlineSongList.add(SongInfo("Name hai mera", "Hate Story4", "https://m.bestwap2.in/load/MP3_Songs/2018%20Bollywood/Hate%20Story%204%20Mp3/128%20Kbps%20Medium%20Quality/Naam%20Hai%20Mera%20(Hate%20Story%20IV)%20128%20Kbps.mp3"))
     }
 
     inner class MySongAdapter : BaseAdapter {
@@ -75,20 +83,27 @@ class MainActivity : AppCompatActivity() {
 
             myView.buPlay.setOnClickListener {
                 //TODO: play song
+
                 if (myView.buPlay.text == "Stop") {
                     mp!!.stop()
                     myView.buPlay.text = "Start"
                 } else {
                     mp = MediaPlayer()
+                    mp!!.isLooping
+                    //mp!!.stop()
+                   if( mp!!.isLooping){
+                       mp!!.release()
+//                        mp!!.stop()
+                    }
                     try {
                         mp!!.setDataSource(Song.SongURL)
                         mp!!.prepare()
                         mp!!.start()
                         myView.buPlay.text = "Stop"
                         sbProgress.max = mp!!.duration
-                        if(sbProgress.max == mp!!.duration){
+                        /*if(sbProgress.max == mp!!.duration){
                             myView.buPlay.text = "Start"
-                        }
+                        }*/
                     } catch (ex: Exception) {
                     }
                 }
@@ -164,7 +179,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun loadSong() {
+    private fun loadSong() {
         val allSongsURI = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
         val selection = MediaStore.Audio.Media.IS_MUSIC + "!=0"
         val cursor = contentResolver.query(allSongsURI, null, selection, null, null)
